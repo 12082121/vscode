@@ -106,7 +106,8 @@ app.on('ready', () => {
 		show: false,
 		webPreferences: {
 			backgroundThrottling: false,
-			webSecurity: false
+			webSecurity: false,
+			nodeIntegration: true
 		}
 	});
 

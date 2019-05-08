@@ -393,7 +393,8 @@ export class WebviewElement extends Disposable implements Webview {
 
 		this._webview = document.createElement('webview');
 		this._webview.setAttribute('partition', `webview${Date.now()}`);
-		this._webview.setAttribute('webpreferences', 'contextIsolation=yes');
+
+		this._webview.setAttribute('webpreferences', 'contextIsolation=yes,nodeIntegration=yes');
 
 		this._webview.style.flex = '0 1';
 		this._webview.style.width = '0';
